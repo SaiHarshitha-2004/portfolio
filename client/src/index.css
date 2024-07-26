@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+.typing-container {
+  display: inline-block;
+  position: relative;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typing {
+  display: inline-block;
+  border-right: 2px solid #fff; /* Adjust the color to match your theme */
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff; /* Adjust the color to match your theme */
+  }
+}
