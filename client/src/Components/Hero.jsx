@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 const Hero = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
-  const words = ["a Web developer", "a Designer" , "a Programmer"];
+  const words = ["a Software developer", "a Designer"];
   const typingSpeed = 100;
 
   useEffect(() => {
